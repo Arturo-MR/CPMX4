@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Ponemos el charset-->
+		<meta charset="utf-8">
+		<!--Título de nuestro sitio -->
+		<title>Mi primer plantilla</title>
+		
+		<!-- Le descripción de nuestro sitio -->
+		<meta name="description" content="Nuestra primer plantilla con Wordpress">
+		
+		<!--Llamar al css de la plantilla -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!--Fuente utilizada desde Google WebFonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+		
+		<!--Llamamos al script desde la carpeta js para no tener que usar prefijos en CSS3 -->
+		<script src="js/prefixfree.min.js"></script>
+		
+		
+	</head>
+	<body>
+		<!--Inicio del sitio-->
+		<div id="site">
+			
+			<!--Inicio del header -->
+			<header id="cabeza">
+				<!--Nuestro logotipo o nombre-->
+				<div class="logo">
+					<h1><a href="#">Mi primer plantilla</a></h1>
+				</div>
+				
+				<!--Botón de búsqueda-->
+				<div class="busqueda">
+					<input type="text" />
+					<input type="submit" value="Buscar" />
+				</div>
+				
+				<!--Barra de navegación principal-->
+				<nav class="menutop">
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Sobre mí</a></li>
+						<li><a href="#">Noticias</a></li>
+						<li><a href="#">Galería</a></li>
+						<li><a href="#">Miembros</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</nav>
+				
+			</header>
+			<!--Fin del header -->
+			
+			<!--Inicio Contenedor de información -->
+			<div id="wrapper">
+				
+				<!--Inicio contenedor de artículos -->
+				<section id="contenidos">
+					
+					<!--Publicaciones-->
+					<article class="post">
+						<!--Cabecera de las publicaciones -->
+						<header class="post-title">
+							<!--Título de la nota e información del autor y categoría-->
+							<hgroup>
+								<h2><a href="#">Nuestra primer publicación</a></h2>
+								<h3>Escrito por: <a href="#">Kikemonk</a> en la categoría: <a href="#">Noticias</a> a las 20:32 pm</h3>
+							</hgroup>
+						</header>
+						
+						<!--Contenido de las publicaciones-->
+						<div class="post-entry">
+						
+							<!--Imagen destacada de la nota -->
+							<div class="imgdestacada">
+								<img src="img/wp.png" alt="Wordpress" />
+							</div>
+							<!--Resumen de la entrada -->
+							<p>Cookie tiramisu topping liquorice powder halvah gummies I love. Cookie sugar plum fruitcake. Macaroon ice cream sweet jelly icing chocolate bar lemon drops cheesecake. Apple pie candy canes toffee gummies.</p>
+							
+<p>Gummi bears jelly beans I love. Jelly-o oat cake lemon drops. I love candy canes carrot cake.</p>
+
+<p>Gummi bears bonbon tootsie roll fruitcake. Macaroon powder liquorice marshmallow I love candy jelly beans macaroon gingerbread. Sweet roll I love unerdwear.com tootsie roll.</p>
+
+<p>Sweet pudding lemon drops cookie muffin jelly-o. Cheesecake I love pie chupa chups. Apple pie sweet marshmallow cheesecake I love candy canes. Marshmallow carrot cake liquorice lollipop sugar plum lollipop carrot cake cake.</p>
+
+<p>I love soufflé lollipop jelly beans tart cake macaroon wafer. Lollipop candy gummies. Lollipop tootsie roll soufflé topping candy gummi bears caramels I love.</p>
+						</div>
+						
+						<!--Meta datos, etiquetas, categorías, etc -->
+						<footer class="post-meta">
+							<!--Etiquetas de la nota-->
+							<div class="etiquetas">
+							Etiquetas: <a href="#">Wordpress, templates, programación, web, html5, css3</a>
+							</div>
+						</footer>
+					</article>
+					<!--Fin publicaciones-->
+				</section>
+				<!--Fin contenedor de artículos -->
+				
+				<!--Inicio barra lateral -->
+				<aside id="sidebar">
+					<!--Inicio widgets -->
+					<div class="widget">
+						<header class="widget-title">
+							Últimas Publicaciones
+						</header>
+						
+						<div class="contenedor-widget">
+							<ul>
+								<li><a href="#">Formularios simples y rápidos</a></li>
+								<li><a href="#">Advanced Custom Fields</a></li>
+								<li><a href="#">Ejemplo de Galerías</a></li>
+								<li><a href="#">Añadir Multimedia</a></li>
+								<li><a href="#">Añadiendo tweets</a></li>
+								<li><a href="#">Nuestra primer publicación</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--Fin widget -->
+					
+					<div class="widget">
+						<header class="widget-title">
+							Mis Tweets
+						</header>
+						
+						<div class="contenedor-widget">
+							<ul>
+								<li><a href="#">Ejemplo de Galerías</a></li>
+								<li><a href="#">Añadir Multimedia</a></li>
+								<li><a href="#">Añadiendo tweets</a></li>
+								<li><a href="#">Nuestra primer publicación</a></li>
+							</ul>
+						</div>
+					</div>
+				</aside>
+				<!--Fin Barra lateral-->
+				
+			</div>
+			<!--Fin del Contenedor de información -->
+		</div>
+		<!--Fin del sitio -->
+		
+			
+		<!--Inicio Footer -->
+		<footer id="pie">
+			<div class="copyright">
+				Desarrollado por: <a href="http://kikemonk.com">Kikemonk</a>
+			</div>
+		</footer>
+		<!--Fin footer -->
+	</body>
+</html>

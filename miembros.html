@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Ponemos el charset-->
+		<meta charset="utf-8">
+		<!--Título de nuestro sitio -->
+		<title>Mi primer plantilla</title>
+		
+		<!-- Le descripción de nuestro sitio -->
+		<meta name="description" content="Nuestra primer plantilla con Wordpress">
+		
+		<!--Llamar al css de la plantilla -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!--Fuente utilizada desde Google WebFonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+		
+		<!--Llamamos al script desde la carpeta js para no tener que usar prefijos en CSS3 -->
+		<script src="js/prefixfree.min.js"></script>
+		
+		
+	</head>
+	<body>
+		<!--Inicio del sitio-->
+		<div id="site">
+			
+			<!--Inicio del header -->
+			<header id="cabeza">
+				<!--Nuestro logotipo o nombre-->
+				<div class="logo">
+					<h1><a href="#">Mi primer plantilla</a></h1>
+				</div>
+				
+				<!--Botón de búsqueda-->
+				<div class="busqueda">
+					<input type="text" />
+					<input type="submit" value="Buscar" />
+				</div>
+				
+				<!--Barra de navegación principal-->
+				<nav class="menutop">
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Sobre mí</a></li>
+						<li><a href="#">Noticias</a></li>
+						<li><a href="#">Galería</a></li>
+						<li><a href="#">Miembros</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</nav>
+				
+			</header>
+			<!--Fin del header -->
+			
+			<!--Inicio Contenedor de información -->
+			<div id="wrapper">
+				
+				<!--Inicio contenedor de miembros -->
+				<section class="members">
+					<article class="memberinfo">
+						<div class="photo">
+							<img src="img/ejemplo.jpg">
+						</div>
+						
+						<div class="datos">
+							<h2>Barack Obama</h2>
+							<table>
+								<tr>
+									<td>Trabajo:</td><td>Político</td>
+								<tr>	
+									<td>Edad:</td><td>51 años</td>
+								</tr>
+								<tr>
+									<td>Web:</td><td><a href="#">www.barackobama.com</a></td>
+								</tr>
+								<tr>
+									<td>Bio:</td><td><p>Presidente electo de los Estados Unidos de América</p></td>
+								</tr>
+							</table>
+							
+						</div>
+					</article>
+					
+					<article class="memberinfo">
+						<div class="photo">
+							<img src="img/ejemplo.jpg">
+						</div>
+						
+						<div class="datos">
+							<h2>Barack Obama</h2>
+							<table>
+								<tr>
+									<td>Trabajo:</td><td>Político</td>
+								<tr>	
+									<td>Edad:</td><td>51 años</td>
+								</tr>
+								<tr>
+									<td>Web:</td><td><a href="#">www.barackobama.com</a></td>
+								</tr>
+								<tr>
+									<td>Bio:</td><td><p>Presidente electo de los Estados Unidos de América</p></td>
+								</tr>
+							</table>
+							
+						</div>
+					</article>
+
+				</section>
+			</div>
+			<!--Fin del Contenedor de información -->
+		</div>
+		<!--Fin del sitio -->
+		
+			
+		<!--Inicio Footer -->
+		<footer id="pie">
+			<div class="copyright">
+				Desarrollado por: <a href="http://kikemonk.com">Kikemonk</a>
+			</div>
+		</footer>
+		<!--Fin footer -->
+	</body>
+</html>

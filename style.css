@@ -1,0 +1,391 @@
+/*!
+Theme Name: CPMX4
+Description: Template de muestra para CPMX4 
+Theme URI: http://mitemplate.com! 
+Version: 1.0
+Author: Enrique Contreras
+Author URI: http://kikemonk.com */!
+/** Reset CSS 
+
+	Sirve para que nuestro documento HTML tenga "valores de fábrica"
+	
+**/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/** Ajusted del sitio globales **/
+
+body{
+	background: #f2f2f2;
+}
+
+a{
+	text-decoration: none;
+	color: #4b8daf;
+	transition: .5s;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+h3{
+	font-size: .7em;
+}
+
+#site{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#wrapper{
+	width: 100%;
+	float: left;
+	margin: 20px 0;
+	clear: both;
+}
+
+/** Ajustes del Header **/
+#cabeza{
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+.logo{
+	float: left;
+	margin: 20px;
+}
+
+.logo a{
+	display: block;
+	width: 250px;
+	height: 96px;
+	background: url(img/logo.png);
+	text-indent: -9999px;
+}
+
+.busqueda{
+	float: right;
+	margin: 50px 20px;
+}
+
+.busqueda input{
+	font-size: 1.1em;
+	padding: 5px 10px;
+	border: 0;
+}
+
+.busqueda input[type=text]{
+	width: 180px;
+	outline: none;
+}
+
+.busqueda input[type=submit]{
+	color: white;
+	text-shadow: 0 0 2px #000;
+	transition:.5s;
+}
+
+.busqueda input[type=submit]:hover{
+	background: #00557a;
+}	
+
+.busqueda input[type=text]:focus, .busqueda input[type=submit]:hover{
+	box-shadow: 0 0 10px #d2cfcf;
+}
+
+.menutop{
+	float: left;
+	clear: both;
+}
+
+.menutop li{
+	display: inline;
+}
+
+.menutop a{
+	display: inline-block;
+	padding: 7px 25px;
+	background: #d0cece;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+	transition:.5s;
+	text-transform: uppercase;
+}
+
+.menutop a:hover{
+	background: #00557a;
+}
+
+/** Ajustes del contenido **/
+
+.pagetitle{
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background: #00557a;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.pagetitle h2{
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+#contenidos{
+	width: 560px;
+	float: left;
+	background: white;
+	box-shadow: 0px 0px 5px #a09d9d;
+	padding: 0 20px;
+}
+
+#contenidos p{
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+.post{
+	width: 100%;
+	float: left;
+	padding: 20px 0;
+	border-bottom: 1px solid #cac5c5;
+}
+
+.post-title{
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 15px;
+}
+
+.post-title h2{
+	margin-bottom: 5px;
+}
+
+.post-entry img{
+	max-width: 100%;
+	height: auto;
+	opacity: .7;
+	transition: .5s;
+}
+
+.post-entry img:hover{
+	opacity: 1;
+}
+
+.imgdestacada{
+	clear: both;
+	margin-bottom: 10px;
+}
+
+.post-meta{
+	clear: both;
+	margin-top: 20px;
+	background: #4b8daf;
+	font-size: .8em;
+	float: left;
+	width: 100%;
+}
+
+.post-meta a{
+	color: white !important;
+}
+
+.etiquetas{
+	width: 70%;
+	float: left;
+	clear: both;
+	padding: 6px;
+}
+
+.more{
+	float: right;
+	margin: 6px;
+}
+
+.more a{
+	display: block;
+	background: #9ccae2;
+	padding: 6px 10px;
+	text-transform: uppercase;
+}
+/** Ajustes de Sidebar **/
+
+#sidebar{
+	width: 300px;
+	float: right;
+	background: white;
+}
+
+.widget{
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.widget-title{
+	background: #00557a;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.contenedor-widget{
+	padding: 5px 20px;
+}
+
+.contenedor-widget ul{
+	list-style: none;
+}
+
+.contenedor-widget li{
+	margin:5px 0;
+	border-bottom: 1px dashed #ccc;
+}
+
+.contenedor-widget img{
+	max-width: 100%;
+	height: auto;
+}
+
+/** Sección miembros **/
+
+.memberinfo{
+	width: 40%;
+	float: left;
+	background: white;
+	padding: 30px;
+	float: left;
+	border: 1px solid black;
+	margin: 1%;
+}
+
+.photo{
+	float: left;
+	width: 30%;
+	margin: 0 20px 20px 0;
+}
+
+.photo img{
+	max-width: 100%;
+	height: auto;
+}
+
+.datos{
+	width: 45%;
+	float: left;
+}
+
+.datos table{
+	margin: 10px 0;
+}
+
+.datos td{
+	padding: 3px 0;
+}
+
+/** Ajustes del footer **/
+
+#pie{
+	width: 100%;
+	float: left;
+	clear: both;
+	padding: 30px 0;
+	text-align: center;
+	color: white;
+	background: #4b8daf;
+}
+
+#pie a{
+	color: #00557a;
+}
